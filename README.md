@@ -13,11 +13,11 @@ WMUEH is available from the corresponding author upon reasonable request.
 [ODIR](https://github.com/nkicsl/OIA-ODIR) Ocular Disease Intelligent Recognition  
 [JSIEC](https://www.kaggle.com/datasets/linchundan/fundusimage1000)  
 ## Module Zoo  
-We provide the pth file of the optimal model for each module at [Baidu pan]().  
+We provide the `.pth` file of the optimal model for each module at [Baidu pan]().  
 ## Inference  
 Through the `main.py`, you can start using the modules of DeepDrRVO to realize early recognition and differential diagnosis of retinal vascular occlusion.  
 + Setting work mode at `--module`  
-+ Setting cfps path at `--image_root_dir`  
++ Setting CFPs path at `--image_root_dir`  
 + Setting batch size at `--batch_size`  
 + Run `main.py`  
 
