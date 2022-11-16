@@ -7,7 +7,6 @@ cryptography==36.0.1
 Cython==0.29.26
 dl==0.1.0
 docutils==0.19
-gluoncv==0.10.4.post4
 HTMLParser==0.0.2
 huggingface_hub==0.10.1
 IETK_Ret==0.1.1
@@ -38,10 +37,10 @@ submitit==1.4.5
 torch==1.9.0+cu111
 torchsummary==1.5.1
 torchvision==0.10.0+cu111
-tornado==6.1
 tqdm==4.62.2
 ttach==0.0.3
 wandb==0.13.5
 wincertstore==0.2.1
 xmlrpclib==1.0.1
 zipp==3.4.1
+ietk==0.1.1
