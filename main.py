@@ -1,4 +1,7 @@
 import argparse
+
+import pandas as pd
+
 from tools.utils import get_dataloader, get_DeepDr
 
 
@@ -20,3 +23,5 @@ if __name__ == '__main__':
     data = get_dataloader(args)
     DeepDr = get_DeepDr(args)
     results = DeepDr(data)
+    results = pd.DataFrame(results)
+    results.to_csv('./results.csv')
