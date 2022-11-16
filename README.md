@@ -24,4 +24,4 @@ Through the `main.py`, you can start using the modules of DeepDrRVO to realize e
 When the inference is completed, the results will be stored in `./results.csv`
 ## Acknowledgments
 + The implementation of baseline SwinTransformer was based on [timm](https://github.com/rwightman/pytorch-image-models#introduction).  
-+ One of the data augmentation methods used comes from[ietk](https://github.com/adgaudio/ietk-ret).
++ One of the data augmentation methods used comes from [ietk](https://github.com/adgaudio/ietk-ret).
