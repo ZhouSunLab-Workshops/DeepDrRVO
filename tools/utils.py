@@ -42,3 +42,12 @@ def get_DeepDr(data_iter, args):
         return DeepDrABC.DeepDrABC(data_iter, get_deepdr=get_deepdr)
     if args.module == 'DeepDrRVO':
         return DeepDrRVO.DeepDrRVO(data_iter, get_deepdr=get_deepdr)
+
+
+def write_csv(results):
+    key = list(results.keys())
+    value = list(results.values())
+    results['CFP'] = key
+    results['Result'] = value
+    results.to_csv('./results.csv')
+    print('Finish!')
