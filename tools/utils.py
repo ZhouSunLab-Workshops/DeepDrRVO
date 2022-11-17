@@ -1,3 +1,4 @@
+import pandas as pd
 import torch
 import os
 from PIL import Image
@@ -47,6 +48,7 @@ def get_DeepDr(data_iter, args):
 def write_csv(results):
     key = list(results.keys())
     value = list(results.values())
+    results = pd.DataFrame()
     results['CFP'] = key
     results['Result'] = value
     results.to_csv('./results.csv')
