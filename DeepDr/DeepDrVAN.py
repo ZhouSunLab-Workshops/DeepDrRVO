@@ -1,10 +1,9 @@
 import torch
 from torch import nn
-from tools.utils import get_deepdr
 
 
 class DeepDrVAN(nn.Module):
-    def __init__(self, data_iter=None
+    def __init__(self, data_iter=None, get_deepdr=None
                  ):
         super(DeepDrVAN, self).__init__()
 
@@ -26,9 +25,9 @@ class DeepDrVAN(nn.Module):
             labels = list(labels.cpu().detach().numpy())
             for (i, name) in enumerate(names):
                 if labels[i] == 0:
-                    tag = 'RaO'
-                if labels[i] == 1:
                     tag = 'RvO'
+                if labels[i] == 1:
+                    tag = 'RaO'
                 if labels[i] == 2:
                     tag = 'Normal'
                 results[name] = tag
