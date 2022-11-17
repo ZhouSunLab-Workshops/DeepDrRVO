@@ -1,12 +1,11 @@
 import argparse
-import pandas as pd
-from tools.utils import get_dataloader, get_DeepDr
+from tools.utils import get_dataloader, get_DeepDr, write_csv
 
 
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--module',
-                        default='DeepDrRVO')
+                        default='DeepDrVAN')
     parser.add_argument('--image_root_dir',
                         default='./sample/')
 
@@ -22,5 +21,4 @@ if __name__ == '__main__':
     DeepDr = get_DeepDr(data, args)
     DeepDr = DeepDr.to('cuda:0')
     results = DeepDr()
-    results = pd.DataFrame(results)
-    results.to_csv('./results.csv')
+    write_csv(results)
