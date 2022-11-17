@@ -1,10 +1,9 @@
 import torch
 from torch import nn
-from tools.utils import get_deepdr
 
 
 class DeepDrVBC(nn.Module):
-    def __init__(self, data_iter=None
+    def __init__(self, data_iter=None, get_deepdr=None
                  ):
         super(DeepDrVBC, self).__init__()
 
