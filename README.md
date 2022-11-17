@@ -22,6 +22,7 @@ If you want to get the synthetic CFPs of BRAO or CRAO by Few-Sample Generator pl
 We provide the `.pth` file of the optimal model for each module at [Baidu pan]().  
 ## Inference  
 Through the `main.py`, you can start using the modules of DeepDrRVO to realize early recognition and differential diagnosis of retinal vascular occlusion.  
+Please follow these steps before using in your own dataset. Or use the sample we provided for demonstration.  
 + Setting work mode at `--module`.  
 + Setting CFPs path at `--image_root_dir`.  
 + Setting batch size at `--batch_size`.  
